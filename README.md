@@ -12,6 +12,9 @@ All categories from the original TARS_6 dataset were collapsed into CLOSED with 
 
 The final model used a training data set with 11500 training questions, with 4223 OPEN and 7227 CLOSED.  The test set had 500 questions, 138 OPEN and 362 CLOSED.
 
+### The final model was too large to upload to github.  It took about 20 minutes to train on my Centos 7 server with an Nvidia Titan RTX.
+### 
+
 Results from 10 training epochs:
 
 - F-score (micro) 0.97
@@ -29,5 +32,8 @@ By class:
 | macro avg      | 0.9510    | 0.9793 | 0.9736   | 500     |
 | weighted avg   | 0.9729    | 0.9700 | 0.9705   | 500     |
 | samples avg    | 0.9700    | 0.9700 | 0.9700   | 500     |
-Although these results appear promising, the importance of conversational context cannot be overstated.  
+
+
+
+Although these results appear promising, the importance of conversational context cannot be overstated.  But the model does appear to be pretty decent as a start for recognizing open-ended questions out of context.
 
